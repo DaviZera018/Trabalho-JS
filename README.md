@@ -261,3 +261,91 @@ Este projeto é útil como introdução aos conceitos de:
 É um ótimo ponto de partida para desenvolver aplicações matemáticas mais avançadas, como:
 - Geradores de números primos.
 - Testes de primalidade mais eficientes.
+
+
+
+
+
+# Cálculo de Somatório de um Array
+
+## Descrição do Projeto
+
+Este projeto implementa uma aplicação simples em Java que calcula o somatório dos elementos de um array de inteiros. A soma dos números é realizada de forma iterativa, utilizando um laço `for`. O resultado é exibido no console ao final da execução.
+
+---
+
+## Estrutura do Código
+
+### 1. **Definição do array**
+- O array `numeros` é inicializado com valores inteiros.
+  ```java
+  int[] numeros = {1, 2, 3, 4, 5};
+  ```
+
+### 2. **Inicialização da variável somatória**
+- A variável `somatorio` é inicializada com o valor 0 para acumular a soma dos elementos do array.
+
+### 3. **Iteração sobre o array**
+- Um laço `for` percorre cada elemento do array.
+- Em cada iteração, o valor atual do array é adicionado à variável `somatorio`:
+  ```java
+  somatorio += numeros[i];
+  ```
+
+### 4. **Exibição do resultado**
+- Após o término do laço, o valor de `somatorio` é exibido no console com a mensagem:
+  ```java
+  System.out.println("O somatório é: " + somatorio);
+  ```
+
+---
+
+## Exemplo de Funcionamento
+
+### Entrada no código
+```java
+int[] numeros = {1, 2, 3, 4, 5};
+```
+
+### Cálculo
+- O somatório será: \( 1 + 2 + 3 + 4 + 5 = 15 \).
+
+### Saída no console
+```
+O somatório é: 15
+```
+
+---
+
+## Personalização
+
+1. **Alterar o array**:
+   - Substituir os valores no array `numeros` para calcular somatórios de outros conjuntos de números.
+
+2. **Entrada dinâmica**:
+   - Permitir que o usuário insira os valores do array em tempo de execução, utilizando a classe `Scanner`.
+
+3. **Cálculo de médias**:
+   - Expandir o programa para calcular a média dos números do array.
+
+4. **Filtragem de valores**:
+   - Modificar o programa para somar apenas números positivos, pares, ou dentro de um intervalo específico.
+
+---
+
+## Utilidade
+
+Este projeto é útil como exemplo introdutório de:
+- Manipulação de arrays.
+- Uso de laços `for` para iterar sobre elementos.
+- Aplicação de operações acumulativas em Java.
+
+Ele serve como base para desenvolver aplicações mais avançadas, como:
+- Processamento de grandes quantidades de dados numéricos.
+- Implementação de cálculos estatísticos (como média, variância, etc.).
+
+---
+
+## Considerações Finais
+
+Este programa é um exemplo simples e eficiente para praticar conceitos básicos de programação em Java. Ele pode ser expandido ou integrado a projetos maiores que envolvam manipulação de dados numéricos.
