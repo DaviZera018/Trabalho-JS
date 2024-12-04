@@ -69,3 +69,96 @@ Este projeto é útil como exemplo introdutório de:
 - Trabalhar com contadores e variáveis acumuladoras.
 
 Além disso, é um bom ponto de partida para desenvolver lógica para problemas mais complexos envolvendo filtros ou verificações em listas de dados.
+
+
+
+
+
+
+
+
+# Gerador de Sequência de Fibonacci
+
+## Descrição do Projeto
+
+Este projeto é uma aplicação em Java que gera e exibe os primeiros `N` números da sequência de Fibonacci. A sequência de Fibonacci é uma série de números em que cada número (a partir do terceiro) é a soma dos dois anteriores. Os dois primeiros números da sequência são, por definição, 0 e 1.
+
+---
+
+## Estrutura do Código
+
+O programa está organizado da seguinte forma:
+
+### 1. **Definição do valor de `N`**
+- A variável `N` determina a quantidade de números na sequência de Fibonacci que será gerada.
+- Se `N` for menor ou igual a 1, o programa exibe uma mensagem de erro e termina.
+
+### 2. **Inicialização do array**
+- Um array chamado `fib` é criado para armazenar os números da sequência.
+- Os dois primeiros valores são definidos diretamente:
+  - `fib[0] = 0`
+  - `fib[1] = 1`
+
+### 3. **Cálculo da sequência**
+- Um laço `for` é usado para preencher os valores restantes no array.
+- Cada elemento a partir do índice 2 é calculado como:
+  ```java
+  fib[i] = fib[i - 1] + fib[i - 2];
+  ```
+
+### 4. **Exibição da sequência**
+- Os números da sequência são exibidos no console, separados por espaços.
+
+---
+
+## Exemplo de Funcionamento
+
+### Código
+```java
+int N = 10;
+```
+
+- O valor de `N` é definido como 10, ou seja, o programa gerará os 10 primeiros números da sequência de Fibonacci.
+
+### Resultado
+A saída no console será:
+```
+0 1 1 2 3 5 8 13 21 34
+```
+
+---
+
+## Personalização
+
+1. **Alterar o valor de `N`**:
+   - Modifique a variável `N` para gerar mais ou menos números da sequência.
+
+2. **Adaptar para outros usos**:
+   - Modifique o código para salvar os números em um arquivo ou utilizá-los em outras operações matemáticas.
+
+3. **Melhorar a exibição**:
+   - Substituir o espaço entre os números por vírgulas ou exibi-los em formato de tabela.
+
+---
+
+## Utilidade
+
+Este projeto é útil como exemplo de:
+- Implementação da sequência de Fibonacci de forma iterativa.
+- Uso de arrays para armazenar dados calculados.
+- Manipulação básica de laços e condicionais em Java.
+
+Também pode ser expandido para aprender técnicas mais avançadas, como:
+- Implementar a sequência de Fibonacci de forma recursiva.
+- Melhorar a eficiência para valores muito grandes usando estruturas como `BigInteger`.
+
+---
+
+## Considerações
+
+A sequência de Fibonacci tem aplicações em diversas áreas, como:
+- Matemática (exemplo: número áureo).
+- Computação (exemplo: algoritmos de divisão e conquista).
+- Natureza (exemplo: padrões de crescimento de plantas). 
+
+Este projeto é um ótimo ponto de partida para explorar essas conexões.
