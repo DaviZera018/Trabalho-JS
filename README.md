@@ -162,3 +162,102 @@ A sequência de Fibonacci tem aplicações em diversas áreas, como:
 - Natureza (exemplo: padrões de crescimento de plantas). 
 
 Este projeto é um ótimo ponto de partida para explorar essas conexões.
+
+
+
+
+
+
+
+# Verificador de Número Primo
+
+## Descrição do Projeto
+
+Este projeto implementa uma aplicação em Java para verificar se um número inteiro é primo. Um número primo é um número maior que 1 que só pode ser dividido exatamente por 1 e por ele mesmo.
+
+A lógica do programa é encapsulada em uma classe chamada `NumeroPrimo`, que utiliza a entrada do usuário para determinar se o número fornecido é primo ou não.
+
+---
+
+## Estrutura do Código
+
+### 1. **Definição de variáveis e entrada de dados**
+- O programa utiliza um objeto da classe `Scanner` para capturar a entrada do usuário.
+- A variável `a` armazena o número digitado pelo usuário.
+
+### 2. **Lógica de verificação**
+A verificação de primalidade é feita através de uma sequência de condições:
+1. **Número 1**:
+   - O número 1 não é considerado primo. O programa exibe a mensagem apropriada.
+2. **Divisibilidade por 2**:
+   - O programa considera o número 2 como primo, pois é a única exceção entre os números pares.
+   - Qualquer outro número par não é primo.
+3. **Divisibilidade por outros números**:
+   - A lógica verifica se o número é divisível por 1 e por ele mesmo, concluindo se é primo ou não.
+
+### 3. **Exibição do resultado**
+- Após a análise, o programa exibe no console uma mensagem indicando se o número é primo.
+
+---
+
+## Exemplo de Funcionamento
+
+### Entrada do usuário
+```
+Digite um numero:
+7
+```
+
+### Saída no console
+```
+O número 7 é primo
+```
+
+Outro exemplo:
+
+### Entrada do usuário
+```
+Digite um numero:
+10
+```
+
+### Saída no console
+```
+O número 10 não é primo
+```
+
+---
+
+## Personalização
+
+1. **Abranger intervalos maiores**:
+   - Expandir o programa para verificar um intervalo de números e listar quais são primos.
+
+2. **Melhorar a eficiência**:
+   - A lógica pode ser otimizada para evitar verificações desnecessárias, por exemplo, testando divisores até a raiz quadrada do número.
+
+3. **Interface do usuário**:
+   - Melhorar a interação, adicionando menus ou mensagens mais claras.
+
+---
+
+## Pontos de Melhoria
+
+Embora o programa funcione, algumas otimizações e ajustes de lógica poderiam ser feitas:
+- **Remover redundâncias**:
+   - A condição `if(a%1==0)` e `if(a%a==0)` são sempre verdadeiras para qualquer número inteiro, tornando-as desnecessárias.
+- **Simplificação da lógica**:
+   - Usar um laço para verificar divisores seria mais eficiente e mais fácil de entender.
+
+---
+
+## Utilidade
+
+Este projeto é útil como introdução aos conceitos de:
+- Verificação de números primos.
+- Entrada de dados com a classe `Scanner`.
+- Uso de condicionais (`if-else`) para implementar regras matemáticas.
+
+É um ótimo ponto de partida para desenvolver aplicações matemáticas mais avançadas, como:
+- Geradores de números primos.
+- Testes de primalidade mais eficientes.
